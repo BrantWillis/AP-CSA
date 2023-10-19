@@ -10,6 +10,10 @@ public class Start {
             }
         } catch(IllegalArgumentException ex) {
             System.out.println("That's illegal!");
+        } catch(ArithmeticException ex) {
+            System.out.println("bad math");
+        } catch(Exception ex) {
+            System.out.println("Generic exception");
         }
         
     }
