@@ -1,31 +1,21 @@
+import LinearStructures.ArrayList;
+
 public class Start {
     public static void main(String[] args) {
-        try {
-            IntVector test = new IntVector(0);
-            
-            for (int i = 0; i < 20; i++) {
-                test.add(i*2);
-            }
-            System.out.println(test);
+        ArrayList<String> strArr = new ArrayList<String>();
+        ArrayList<Integer> intArr = new ArrayList<Integer>();
 
-            test.add(17,100);
-            System.out.println(test);
+        strArr.add("hi");
+        strArr.add("yeah");
+        strArr.add(0,"georgie");
 
-            //System.out.println(test);
+        intArr.add(5);
+        intArr.add(7);
+        intArr.add(0, 1);
 
-            //test.add(50,50);
-            System.out.println(test);
 
-            //test.remove(3);
-            //System.out.println(test);
-            
-        } catch(IllegalArgumentException ex) {
-            System.out.println("That's illegal!");
-        } catch(ArithmeticException ex) {
-            System.out.println("bad math");
-        } catch(Exception ex) {
-            System.out.println("Generic exception");
-        }
-        
+
+        System.out.println(strArr);
+        System.out.println(intArr);
     }
 }
