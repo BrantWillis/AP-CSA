@@ -32,5 +32,9 @@ public class Start {
 
         System.out.println(strArr);
         System.out.println(intArr);
+
+        for(String s: strArr) {
+            System.out.print(s);
+        }
     }
 }
