@@ -1,9 +1,12 @@
 import LinearStructures.ArrayList;
+import LinearStructures.LinkedList;
+
+import java.util.Iterator;
 
 public class Start {
     public static void main(String[] args) {
-        ArrayList<String> strArr = new ArrayList<String>();
-        ArrayList<Integer> intArr = new ArrayList<Integer>();
+        LinkedList<String> strArr = new LinkedList<String>();
+        LinkedList<Integer> intArr = new LinkedList<Integer>();
 
         strArr.add("hi");
         strArr.add("yeah");
@@ -14,7 +17,6 @@ public class Start {
 
         System.out.println(strArr);
 
-        while (strArr.remove("georgie") == true) {}
         strArr.set(0, "hello");
 
         intArr.add(5);
@@ -22,19 +24,23 @@ public class Start {
         intArr.add(0, 1);
         intArr.add(56);
         intArr.add(73);
-        intArr.add(56);
+        intArr.add(84);
         
         System.out.println(intArr);
 
-        intArr.remove((Integer)56);
+        intArr.remove(4);
 
 
 
         System.out.println(strArr);
         System.out.println(intArr);
 
-        for(String s: strArr) {
-            System.out.print(s);
+        for(int s: intArr) {
+            System.out.println(s);
         }
+
+
+        
+
     }
 }
