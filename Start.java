@@ -1,12 +1,10 @@
 import LinearStructures.ArrayList;
 import LinearStructures.LinkedList;
 
-import java.util.Iterator;
-
 public class Start {
     public static void main(String[] args) {
         LinkedList<String> strArr = new LinkedList<String>();
-        LinkedList<Integer> intArr = new LinkedList<Integer>();
+        ArrayList<Integer> intArr = new ArrayList<Integer>();
 
         strArr.add("hi");
         strArr.add("yeah");

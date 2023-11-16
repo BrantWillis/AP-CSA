@@ -199,7 +199,7 @@ public class LinkedList<E> implements Iterable<E> {
     //why is it static???
     private static class Node<E> {
         E element;
-        Node next;
+        Node<E> next;
 
         public Node(E element) {
             this.element = element;
